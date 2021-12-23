@@ -1,0 +1,11 @@
+{
+  "name": "PWA",
+  "componentPath": "modules",
+  "components": {
+    "PWA-API": {
+      "name": "PWA-API",
+      "path": "/modules/PWA-API"
+    }
+  },
+  "lastFileOpened": "/index.html"
+}

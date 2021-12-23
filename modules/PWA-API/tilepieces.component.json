@@ -1,0 +1,48 @@
+{
+  "name": "PWA-API",
+  "description": "",
+  "version": "1.0.0",
+  "author": "",
+  "website": "",
+  "repository": "",
+  "html": "",
+  "addDependenciesToBundles": true,
+  "bundle": {
+    "stylesheet": {},
+    "stylesheetHeader": "",
+    "stylesheetFooter": "",
+    "scriptHeader": "(()=>{",
+    "scriptFooter": "})();",
+    "script": {
+      "src": "PWA-API.js"
+    }
+  },
+  "sources": {
+    "stylesheets": [],
+    "scripts": [
+      "sw-constants.js",
+      "src"
+    ]
+  },
+  "dependencies": [
+    "PWA-API/minimatch"
+  ],
+  "components": {
+    "PWA-API/minimatch": {
+      "path": "/components/minimatch",
+      "name": "PWA-API/minimatch"
+    }
+  },
+  "mergeMiscellaneous": true,
+  "miscellaneous": [
+    "sw.js",
+    "sw-constants.js",
+    "sw-handleRequest.js"
+  ],
+  "selector": "",
+  "interface": "",
+  "fixedHTML": false,
+  "parseHTML": "",
+  "noSet": true,
+  "checked": true
+}
