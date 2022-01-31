@@ -11,7 +11,7 @@ async function handleRequest(request){
       response.headers.append("Location",newRequestURL);
       return response;
     }
-    if(url == CACHEPATH )
+    if(url == CACHEPATH)
       return new Response('');
     var urlToProject = url.startsWith(CACHEPATH);
     if(!urlToProject){

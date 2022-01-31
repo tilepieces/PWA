@@ -1,4 +1,6 @@
-const VERSION = "0.0.2";
+const VERSION = "0.0.1"; // THIS MUST BE CHANGED HERE
+const CACHEAPPBASE = "cacheApp";
+const CACHEAPP = "cacheApp" + VERSION;
 const appFiles = [
   /* APP specific files */
   "modules/PWA-API/PWA-API.js",
@@ -23,26 +25,32 @@ const appFiles = [
   "modules/tilepieces/framework/tilepieces-framework.bundle.css",
   "modules/tilepieces/framework/tilepieces-framework.bundle.js",
   "modules/tilepieces/html-inspector/index.html",
+  "modules/tilepieces/html-inspector/index-pop.html",
   "modules/tilepieces/html-inspector/bundle/html-inspector.bundle.css",
   "modules/tilepieces/html-inspector/bundle/html-inspector.bundle.js",
   "modules/tilepieces/package-manager/index.html",
+  "modules/tilepieces/package-manager/index-pop.html",
   "modules/tilepieces/package-manager/bundle/package-manager.bundle.css",
   "modules/tilepieces/package-manager/bundle/package-manager.bundle.js",
   "modules/tilepieces/panel-history/panel-history.html",
   "modules/tilepieces/panel-history/panel-history-pop.html",
-  "modules/tilepieces/panel-history/panel-history.bundle.css",
-  "modules/tilepieces/panel-history/panel-history.bundle.js",
-  "modules/tilepieces/project-explorer/project-explorer.html",
   "modules/tilepieces/panel-history/bundle/tilepieces.panel-history.bundle.css",
   "modules/tilepieces/panel-history/bundle/tilepieces.panel-history.bundle.js",
+  "modules/tilepieces/project-explorer/project-explorer.html",
+  "modules/tilepieces/project-explorer/bundle/project-explorer.bundle.css",
+  "modules/tilepieces/project-explorer/bundle/project-explorer.bundle.js",
   "modules/tilepieces/terser/terser.bundle.min.js",
   "modules/tilepieces/jszip/jszip.min.js",
   "modules/tilepieces/element-panel/element-panel.html",
   "modules/tilepieces/element-panel/bundle/element-panel.bundle.css",
   "modules/tilepieces/element-panel/bundle/element-panel.bundle.js",
+  "modules/tilepieces/element-panel/tag-components",
   "modules/tilepieces/screen-dimensions-panel/screen-dimensions.html",
   "modules/tilepieces/screen-dimensions-panel/components/screen-dimensions-panel/bundle/screen-dimensions-panel.bundle.css",
   "modules/tilepieces/screen-dimensions-panel/components/screen-dimensions-panel/bundle/screen-dimensions-panel.bundle.js",
+  "modules/tilepieces/tabs/svg-ico-freccia.svg",
+  "modules/tilepieces/stylesheet/svg-circle-info.svg",
+  "modules/tilepieces/stylesheet/svg-info.svg",
   "index.html",
   "tp-favi.png",
   "tp-favi-180.png"
