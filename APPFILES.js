@@ -18,6 +18,7 @@ const appFiles = [
   "modules/tilepieces/component-panel/component-panel-pop.html",
   "modules/tilepieces/component-panel/bundle/component-panel.bundle.css",
   "modules/tilepieces/component-panel/bundle/component-panel.bundle.js",
+  "modules/tilepieces/css-input/image_plus_icon.svg",
   "modules/tilepieces/css-viewer/html/css-viewer.html",
   "modules/tilepieces/css-viewer/html/css-viewer-pop.html",
   "modules/tilepieces/css-viewer/bundle/css-viewer.bundle.css",
@@ -53,5 +54,8 @@ const appFiles = [
   "modules/tilepieces/stylesheet/svg-info.svg",
   "index.html",
   "tp-favi.png",
-  "tp-favi-180.png"
+  "tp-favi-180.png",
+  "modules/tilepieces/project-tree/svg/svg-folder-ico.svg",
+  "modules/tilepieces/project-tree/svg/svg-file.svg",
+  "modules/tilepieces/project-tree/arrow.svg"
 ];
