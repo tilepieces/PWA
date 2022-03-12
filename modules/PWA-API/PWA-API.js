@@ -548,8 +548,8 @@ async function setSettings(newSettings) {
   return {}
 }
 async function update(path, blob, component) {
-  if (!tilepieces.currentProject)
-    throw "[update]Invalid call: no tilepieces.project setted";
+  if (!tilepieces.currentProject && !component)
+    throw "[update]Invalid call: no tilepieces.project setted and no component setted";
   await swStart();
   var parentDirectoryAsArray = path.split("/");
   var name = parentDirectoryAsArray.pop();
@@ -788,7 +788,7 @@ async function isDir(path, component, project) {
       + path + " , " + cacheToMatch + " , " + parentDirectory);
   }
   var json = await readParent.json();
-  if (typeof json[resourceName] === "object")
+  if (typeof json[decodeURI(resourceName)] === "object")
     return true;
 }
 async function readComponentsInner(components, startingPath = "") {
