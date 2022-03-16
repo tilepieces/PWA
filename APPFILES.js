@@ -1,4 +1,4 @@
-const VERSION = "0.0.10"; // THIS MUST BE CHANGED HERE
+const VERSION = "0.0.1"; // THIS MUST BE CHANGED HERE
 const CACHEAPPBASE = "cacheApp";
 const CACHEAPP = "cacheApp" + VERSION;
 const appFiles = [
@@ -43,6 +43,7 @@ const appFiles = [
   "modules/tilepieces/terser/terser.bundle.min.js",
   "modules/tilepieces/jszip/jszip.min.js",
   "modules/tilepieces/element-panel/element-panel.html",
+  "modules/tilepieces/element-panel/element-panel-pop.html",
   "modules/tilepieces/element-panel/bundle/element-panel.bundle.css",
   "modules/tilepieces/element-panel/bundle/element-panel.bundle.js",
   "modules/tilepieces/element-panel/tag-components",
@@ -50,6 +51,7 @@ const appFiles = [
   "modules/tilepieces/screen-dimensions-panel/components/screen-dimensions-panel/bundle/screen-dimensions-panel.bundle.css",
   "modules/tilepieces/screen-dimensions-panel/components/screen-dimensions-panel/bundle/screen-dimensions-panel.bundle.js",
   "modules/tilepieces/tabs/svg-ico-freccia.svg",
+  "modules/tilepieces/stylesheet/svg-summary.svg",
   "modules/tilepieces/stylesheet/svg-circle-info.svg",
   "modules/tilepieces/stylesheet/svg-info.svg",
   "index.html",

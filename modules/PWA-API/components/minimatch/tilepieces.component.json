@@ -22,13 +22,11 @@
     "scripts": []
   },
   "dependencies": [],
-  "components": {},
+  "components": [],
   "mergeMiscellaneous": false,
   "miscellaneous": [],
   "selector": "",
   "interface": "",
   "fixedHTML": false,
-  "parseHTML": "",
-  "noSet": true,
-  "checked": true
+  "parseHTML": ""
 }
