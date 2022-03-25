@@ -13,7 +13,7 @@
   "background_color": "#fff",
   "icons": [
     {
-      "src": "Tilepieces.png",
+      "src": "TilePieces.png",
       "type": "image/png",
       "sizes": "1024x1024"
     },
