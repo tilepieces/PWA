@@ -1,0 +1,34 @@
+{
+  "name": "Tilepieces",
+  "start_url" : "index.html",
+  "display" : "minimal-ui",
+  "description": "An open source project to visually editing HTML documents and Web applications projects",
+  "theme_color": "#fff",
+  "lang": "en",
+  "categories": [
+    "devtools",
+    "productivity",
+    "utilities"
+  ],
+  "background_color": "#fff",
+  "icons": [
+    {
+      "src": "Tilepieces.png",
+      "type": "image/png",
+      "sizes": "1024x1024"
+    },
+    {
+      "src": "TilePieces_maskable_icon.png",
+      "type": "image/png",
+      "sizes": "1024x1024",
+      "purpose": "maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "tilepieces-screenshot.jpg",
+      "type": "image/jpeg",
+      "sizes": "1366x758"
+    }
+  ]
+}
