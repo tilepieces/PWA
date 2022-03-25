@@ -1,11 +1,11 @@
-const VERSION = "0.0.3"; // THIS MUST BE CHANGED HERE
+const VERSION = "0.1.0"; // THIS MUST BE CHANGED HERE
 const CACHEAPPBASE = "cacheApp";
 const CACHEAPP = "cacheApp" + VERSION;
 const appFiles = [
   /* APP specific files */
   "modules/PWA-API/PWA-API.js",
   "manifest.json",
-  "Tilepieces.png",
+  "TilePieces.png",
   "tilepieces-screenshot.jpg",
   "TilePieces_maskable_icon.png",
   /* tilepieces files */
