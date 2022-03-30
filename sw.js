@@ -1,3 +1,4 @@
+// IOS BUG? - VERSION 0.1.3
 importScripts('sw-constants.js');
 importScripts('sw-handleRequest.js');
 importScripts('APPFILES.js'); // WHERE TO PUT APP DATA
