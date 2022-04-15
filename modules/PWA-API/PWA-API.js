@@ -224,7 +224,6 @@ async function createComponent(newSettings, files = []) {
     var newPath = newSettings.local ?
       component.path + slashDir(fileData.path) :
       fileData.path;
-    console.log(slashDir(newPath), fileData.blob,!newSettings.local ? component.name : null);
     await update(slashDir(newPath), fileData.blob, !newSettings.local ? component.name : null)
   }
   return {};

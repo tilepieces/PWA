@@ -1,4 +1,7 @@
 async function handleRequest(request) {
+  var properConstructedUrl = new URL(request.url);
+  if(properConstructedUrl.origin != location.origin)
+    return fetch(request.url);
   var matchParams = request.url.match(/\?|#/);
   if (matchParams)
     request = new Request(request.url.substring(0, matchParams.index));

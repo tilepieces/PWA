@@ -3,5 +3,6 @@
   "applicationName": "tilepieces",
   "panelPosition": "free",
   "sandboxFrame": true,
-  "componentPath": "components"
+  "componentPath": "components",
+  "skipMatchAll" : true
 }
