@@ -1,8 +1,18 @@
 {
   "workspace": "www",
   "applicationName": "tilepieces",
-  "panelPosition": "free",
+  "panelPosition": "right",
   "sandboxFrame": true,
   "componentPath": "components",
-  "skipMatchAll" : true
+  "skipMatchAll" : true,
+  "imageTypeProcess": 0,
+  "delayUpdateFileMs": 500,
+  "miscDir": "miscellaneous",
+  "currentStyleSheetAttribute": "data-tilepieces-current-stylesheet",
+  "relativePaths": false,
+  "terserConfiguration": {
+    "compress": false,
+    "mangle": false
+  },
+  "version" : "0.1.15"
 }

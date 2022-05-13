@@ -2,6 +2,10 @@
   "name": "PWA",
   "componentPath": "modules",
   "components": {
+    "tilepieces": {
+      "name": "tilepieces",
+      "path": "/modules/tilepieces"
+    },
     "PWA-API": {
       "name": "PWA-API",
       "path": "/modules/PWA-API"
@@ -11,6 +15,7 @@
   "openedPanels": [
     "package-manager",
     "project-explorer",
-    "html-inspector"
+    "html-inspector",
+    "component-panel"
   ]
 }

@@ -94,9 +94,12 @@ async function create(projectName) {
   tilepieces.currentProject = projectName;
   var innerProjectConfPath = projectPath + "/tilepieces.project.json";
   var innerProjectConf = await cacheFiles.match(new Request(innerProjectConfPath));
+  var globalSettingsRaw = await fetch("/settings.json");
+  var globalSettings = await globalSettingsRaw.json();
+  var newProjectSettings = Object.assign({},globalSettings,{name: projectName, components: {}})
   if (!innerProjectConf)
     await update("tilepieces.project.json",
-      new Blob([JSON.stringify({name: projectName, components: {}}, null, 2)],
+      new Blob([JSON.stringify(newProjectSettings, null, 2)],
         {type: 'application/json'}));
   return {
     name: projectName,
@@ -420,8 +423,8 @@ function read(path, component, project, raw = false) {
       var proxyPath = proxyToComp ?
         (componentPath.indexOf('http://') === 0 || componentPath.indexOf('https://') === 0) ?
           componentPath + path :
-          ("/" + componentPath + path).replace(/\/\//g, "/") :
-        CACHEPATH + (project + path).replace(/\/\//g, "/");
+          ("/" + componentPath + path).replace(/\/+/g, "/") :
+        CACHEPATH + (project + path).replace(/\/+/g, "/");
       var responseObj = await cache.match(new Request(proxyPath));
       if (responseObj) {
         if (raw)
@@ -603,7 +606,7 @@ async function update(path, blob, component) {
       slashDir(components[component].path);
   }
   var pathWhereToPut = component ? componentPath : CACHEPATH + tilepieces.currentProject;
-  await cache.put(pathWhereToPut + parentDirectory.replace(/\/\//g, "/"),
+  await cache.put(pathWhereToPut + parentDirectory.replace(/\/+/g, "/"),
     new Response(newParentDirectory));
   // add file
   var newPath = pathWhereToPut + path;
