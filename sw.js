@@ -1,4 +1,4 @@
-// SOME BROWSERS (eg. safari) DON'T TAKE IN CONSIDERATION SCRIPT IMPORTED -> VERSION 0.1.17
+// SOME BROWSERS (eg. safari) DON'T TAKE IN CONSIDERATION SCRIPT IMPORTED -> VERSION 0.1.18
 importScripts('sw-constants.js');
 importScripts('sw-handleRequest.js');
 importScripts('APPFILES.js'); // WHERE TO PUT APP DATA
