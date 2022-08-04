@@ -1,4 +1,4 @@
-const VERSION = "0.1.20"; // THIS MUST BE CHANGED HERE
+const VERSION = "0.1.21"; // THIS MUST BE CHANGED HERE
 const CACHEAPPBASE = "cacheApp";
 const CACHEAPP = "cacheApp" + VERSION;
 const appFiles = [
@@ -57,6 +57,7 @@ const appFiles = [
   "modules/tilepieces/screen-dimensions-panel/components/screen-dimensions-panel/bundle/screen-dimensions-panel.bundle.css",
   "modules/tilepieces/screen-dimensions-panel/components/screen-dimensions-panel/bundle/screen-dimensions-panel.bundle.js",
   "modules/tilepieces/tabs/svg-ico-freccia.svg",
+  "modules/tilepieces/stylesheet/svg-close.svg",
   "modules/tilepieces/stylesheet/svg-summary.svg",
   "modules/tilepieces/stylesheet/svg-circle-info.svg",
   "modules/tilepieces/stylesheet/svg-info.svg",
