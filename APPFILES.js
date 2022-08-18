@@ -1,4 +1,4 @@
-const VERSION = "0.1.22"; // THIS MUST BE CHANGED HERE
+const VERSION = "0.1.23"; // THIS MUST BE CHANGED HERE
 const CACHEAPPBASE = "cacheApp";
 const CACHEAPP = "cacheApp" + VERSION;
 const appFiles = [
